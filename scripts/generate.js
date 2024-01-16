@@ -12,7 +12,6 @@ try {
         sort((a, b) => {
             return +b.substring(3) - a.substring(3);
         })[0].substring(3) + 1;
-
     if (isNaN(day)) {
         console.log("day is nan");
         day = 1;
@@ -29,7 +28,6 @@ try { fs.mkdirSync(day_path); } catch (e) { }
 
 function generate_method(method) {
     return `${method.name}(${method.args || ""}): ${method.return || "void"} {
-
 }`;
 }
 
